@@ -43,7 +43,10 @@
     	<style>
     		#site-navigation { top: 28px !important; }
     	</style>
-        <?php }?>       
+        <?php }?>
+        <!-- wp_head start -->
+	    <?php wp_head(); ?>
+	    <!-- wp_head end -->       
     </head>
     <body class="homepage">
     <header id="header">
