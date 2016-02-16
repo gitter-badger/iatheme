@@ -37,14 +37,14 @@
             </div>
         </div>
  </footer>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrapValidator.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.prettyPhoto.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.isotope.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-  <!-- wp_footer start -->
-  <?php wp_footer(); ?>
-  <!-- wp_footer end --> 
+ <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrapValidator.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.prettyPhoto.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.isotope.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+	<!-- wp_footer start -->
+	<?php wp_footer(); ?>
+	<!-- wp_footer end -->   
 </body>
 </html>

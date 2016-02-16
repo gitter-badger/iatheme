@@ -44,9 +44,9 @@
     		#site-navigation { top: 28px !important; }
     	</style>
         <?php }?>
-        <!-- wp_head start -->
-	    <?php wp_head(); ?>
-	    <!-- wp_head end -->       
+	<!-- wp_head start -->
+	<?php wp_head(); ?>
+	<!-- wp_head end -->               
     </head>
     <body class="homepage">
     <header id="header">
@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-3">
-                        <div class="top-number"><p><a href="sk/o-agenture"  title="Slovensky">SK</a> / <a href="en/about-agency/introduction" title="English">EN</a></p></div>
+                        <div class="top-number"><p><a href="https://ia.gov.sk"  title="ia mpsvr sr">IA MPSVR SR</a></p></div>
                     </div>
                     <div class="col-sm-6 col-xs-8">
                        <div class="social">
@@ -95,4 +95,3 @@
             </div><!--/.container-->
         </nav><!--/nav-->
     </header><!--/header-->
-

@@ -54,6 +54,9 @@ function iatheme_setup() {
 	add_theme_support( 'custom-background', apply_filters( 'iatheme_custom_background_args', array(
 		'default-color' => 'f5f5f5',
 	) ) );
+
+	// Theme supports post-thumbnail
+	add_theme_support( 'post-thumbnails', array( 'post' ) ); 
 	
 	
 	
@@ -76,7 +79,7 @@ function the_breadcrumbs() {
             echo "<a href='";
            	echo get_option('home');
             echo "'>";
-            echo "Home";
+            echo "Domov";
             echo "</a>";
  
             if (is_category() || is_single()) {
@@ -317,5 +320,4 @@ add_action( 'widgets_init', 'iatheme_widgets_init' );
 	/**
 	 * END Class Name: twitter_bootstrap_nav_walker
 	 */
-
 
