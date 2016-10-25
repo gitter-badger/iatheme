@@ -171,6 +171,23 @@ function iatheme_widgets_init() {
 }
 add_action( 'widgets_init', 'iatheme_widgets_init' );
 
+// Remove WordPress Meta Generator
+remove_action('wp_head', 'wp_generator');
+
+// Hide WordPress Version Info
+function hide_wordpress_version() {
+	return '';
+}
+add_filter('the_generator', 'hide_wordpress_version');
+
+// Remove WordPress Version Number In URL Parameters From JS/CSS
+function hide_wordpress_version_in_script($src, $handle) {
+    $src = remove_query_arg('ver', $src);
+	return $src;
+}
+add_filter( 'style_loader_src', 'hide_wordpress_version_in_script', 10, 2 );
+add_filter( 'script_loader_src', 'hide_wordpress_version_in_script', 10, 2 );
+
 
 
 	/**
