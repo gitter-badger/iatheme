@@ -18,26 +18,26 @@
                     </div>
                     <?php endif; ?>
                 </div>
-                <div class="center col-sm-6">
+                <div class="center col-sm-8">
                     <?php if ( is_active_sidebar( 'footer_2' ) ) : ?>
 	                   <div id="footer_2" class="footer_2 widget-area" role="complementary">
 		                  <?php dynamic_sidebar( 'footer_2' ); ?>
 	                   </div>
                     <?php endif; ?>
                 </div>
-                <div class="center col-sm-4">
+                <div class="center col-sm-2">
                      <?php if ( is_active_sidebar( 'footer_3' ) ) : ?>
 	                   <div id="footer_3" class="footer_3 widget-area" role="complementary">
 		                  <?php dynamic_sidebar( 'footer_3' ); ?>
 	                   </div>
                     <?php endif; ?>
+                    <a href="http://www.employment.gov.sk/sk/esf/"><img width="45" src="<?php echo get_template_directory_uri(); ?>/images/esf.png" alt="logo"></a> &nbsp;&nbsp; 
+                    <a href="http://www.employment.gov.sk/sk/esf/programove-obdobie-2007-2013/"><img width="68" src="<?php echo get_template_directory_uri(); ?>/images/zasi.png" alt="logo"></a>
                 </div>
             </div>
         </div>
  </footer>
-
- 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
-	<script src="https://cdn.datatables.net/s/bs/dt-1.10.10/datatables.min.js" type="text/javascript"></script>
+ <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrapValidator.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.prettyPhoto.js"></script>

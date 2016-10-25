@@ -13,14 +13,13 @@
 	<?php get_sidebar(); ?>
 	<div class="col-sm-9 pull-right">
 		<?php the_breadcrumbs(); ?>
-		
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<?php 
 			if (is_single()) :
 				the_title('<h2>', '</h2>' );
 			?>
 			<?php if( ! has_tag('no-date',$post)) { ?>
-				<div class="published"><?php _e('Published'); echo(' '); the_time('l, j F Y'); ?></div>
+				<h5><?php _e('Published'); echo(' '); the_time('l, j F Y'); ?></h5>
 			<?php } ?>
 
 			<p><?php the_content(__('(viac...)')); ?></p>
@@ -45,7 +44,7 @@
 				?>
 				
 				<?php if( ! has_tag('no-date',$post)) { ?>
-					<div class="published"><?php _e('Published'); echo(' '); the_time('l, j F Y'); ?></div>
+					<h5><?php _e('Published'); echo(' '); the_time('l, j F Y'); ?></h5>
 				<?php } ?>
 				
 				<?php

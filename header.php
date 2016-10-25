@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-3">
-                        <div class="top-number"><p><a href="https://ia.gov.sk"  title="ia mpsvr sr"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> IA MPSVR SR</a>  | <a href="/">SK</a>/<a href="/en/home">EN</a></p></div>
+                        <div class="top-number"><p><a href="https://ia.gov.sk"  title="ia mpsvr sr">IA MPSVR SR</a></p></div>
                     </div>
                     <div class="col-sm-6 col-xs-8">
                        <div class="social">
@@ -84,7 +84,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>"><img class="hidden-sm" src="<?php echo get_template_directory_uri(); ?>/images/logo_kiku_60.png" alt="Logo IA MPSVR SR" title="Implementačná agentúra pre OP ZaSI"><img class="visible-sm" src="<?php echo get_template_directory_uri(); ?>/images/logo_kuku_60.png" alt="Logo IA MPSVR SR" title="Implementačná agentúra pre OP ZaSI"></a>
+                    <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>"><img class="hidden-sm" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo IA MPSVR SR" title="Implementačná agentúra pre OP ZaSI"><img class="visible-sm" src="<?php echo get_template_directory_uri(); ?>/images/logom.png" alt="Logo IA MPSVR SR" title="Implementačná agentúra pre OP ZaSI"></a>
                 </div>
                 <div  id="primary-navigation" class="collapse navbar-collapse navbar-right" role="navigation" >
 				    <?php wp_nav_menu( array( 'theme_location' => 'primary', 
