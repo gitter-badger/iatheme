@@ -24,6 +24,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
   float: right;
 }
 
+.published {
+  color: darkgrey;
+  margin: -3px 0px;
+}
+
+.icon{
+   font-size: 65px;
+}
+
 /*************************
 *******Typography******
 **************************/
