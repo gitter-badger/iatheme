@@ -24,6 +24,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
   float: right;
 }
 
+.published {
+  color: darkgrey;
+  margin: -3px 0px;
+}
+
+.icon{
+   font-size: 65px;
+}
+
 /*************************
 *******Typography******
 **************************/
@@ -43,7 +52,7 @@ h5,
 h6 {
   font-weight: 600; 
   font-family: 'Open Sans', sans-serif;
-  color:#f36324;
+  color:#0082c9;
 }
 
 h1{
@@ -66,7 +75,7 @@ h4{
 }
 
 a {
-  color: #f26422;
+  color: #0082c9;
   -webkit-transition: color 300ms, background-color 300ms;
   -moz-transition: color 300ms, background-color 300ms;
   -o-transition:  color 300ms, background-color 300ms;
@@ -85,7 +94,7 @@ hr {
 
 .btn-primary {
   padding: 8px 20px;
-  background: #f26422;
+  background: #0082c9;
   color: #fff;
   border-radius: 4px;
   border:none;
@@ -95,7 +104,7 @@ hr {
 
 .btn-primary:hover, 
 .btn-primary:focus{
-  background: #f26422;
+  background: #0082c9;
   outline: none;
   box-shadow: none;
 } 
@@ -282,7 +291,7 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
-	background-color: #f26422;
+	background-color: #0082c9;
   color: #fff;
 }
 
@@ -302,7 +311,7 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: #f26422;
+  background-color: #0082c9;
   color: #fff;
 }
 
@@ -338,7 +347,7 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
-  background-color: #f26422;
+  background-color: #0082c9;
   color: #fff;
 }
 
@@ -385,7 +394,7 @@ input.search-form:hover {
 
 #main-slider .carousel .btn-slide {
   padding: 8px 20px;
-  background: #f26422;
+  background: #0082c9;
   color: #fff;
   border-radius: 4px;
   margin-top: 25px;
@@ -433,7 +442,7 @@ input.search-form:hover {
 #main-slider .next {
   position: absolute;
   top: 50%;
-  background-color: #f26422;
+  background-color: #0082c9;
   color: #fff;
   display: inline-block;
   margin-top: -25px;
@@ -482,9 +491,9 @@ input.search-form:hover {
 #main-slider .carousel-indicators .active{
   width: 20px;
   height: 20px;
-  background-color: #f26422;
+  background-color: #0082c9;
    margin: 0 15px 0 0;
-   border: 1px solid #f26422;
+   border: 1px solid #0082c9;
    position: relative;
 }
 
@@ -494,8 +503,8 @@ input.search-form:hover {
   width: 24px;
   height: 24px;
   border-radius: 100%;
-  background: #f26422;
-  border: 1px solid #f26422;
+  background: #0082c9;
+  border: 1px solid #0082c9;
   left: -3px;
   top: -3px;
 }
@@ -563,7 +572,7 @@ input.search-form:hover {
   line-height: 110px;
   text-align:center;
   background: #ffffff;
-  color: #f26422;
+  color: #0082c9;
   border: 3px solid #ffffff;
   box-shadow: inset 0 0 0 5px #f2f2f2;
   -webkit-box-shadow: inset 0 0 0 5px #f2f2f2;
@@ -576,11 +585,11 @@ input.search-form:hover {
 }
 
 .feature-wrap i:hover {
-  background: #f26422;
+  background: #0082c9;
   color: #fff;
-  box-shadow: inset 0 0 0 5px #f26422;
-  -webkit-box-shadow: inset 0 0 0 5px #f26422;
-  border: 3px solid #f26422;
+  box-shadow: inset 0 0 0 5px #0082c9;
+  -webkit-box-shadow: inset 0 0 0 5px #0082c9;
+  border: 3px solid #0082c9;
 }
 
 #recent-works .col-xs-12.col-sm-4.col-md-3{
@@ -625,7 +634,7 @@ input.search-form:hover {
   height: 100%;
   opacity: 0;
   border-radius: 0;
-  background: #f26422;
+  background: #0082c9;
   color: #fff;
   vertical-align: middle;
   -webkit-transition: opacity 500ms;
@@ -837,12 +846,12 @@ a.accordion-toggle  i{
 }
 
 .panel-heading.active a.accordion-toggle i{
-  background: #f26422;
+  background: #0082c9;
   color: #fff;
 }
 
 .panel-heading.active a.accordion-toggle.collapsed i{
-  background: #f26422;
+  background: #0082c9;
   color: #fff;
 }
 
@@ -1462,7 +1471,7 @@ margin-bottom: 36px;
 }
 
 .request h4 a{
-  background:#f26422;
+  background:#0082c9;
   color: #fff;
   font-size: 14px;
   font-weight: normal;
@@ -1471,7 +1480,7 @@ margin-bottom: 36px;
 }
 
 .request h4:after {
-  border-color: #f26422 transparent transparent;
+  border-color: #0082c9 transparent transparent;
   border-style: solid;
   border-width: 12px;
   bottom: -18px;
@@ -1483,7 +1492,7 @@ margin-bottom: 36px;
 }
 
 .request h4:before {
-  border-color: #f26422 transparent transparent;
+  border-color: #0082c9 transparent transparent;
   border-style: solid;
   border-width: 12px;
   bottom: -18px;
@@ -1536,7 +1545,7 @@ margin-bottom: 36px;
 
 .footer {
   background: none repeat scroll 0 0 #2E2E2E;
-  border-top: 5px solid #f26422;
+  border-top: 5px solid #0082c9;
   height: 84px;
   margin-top: 110px;
 }
@@ -1589,8 +1598,8 @@ margin-bottom: 36px;
 .portfolio-filter > li a:hover,
 .portfolio-filter > li a.active{
   color:#fff;
-  background: #f26422;
-  border: 1px solid #f26422;
+  background: #0082c9;
+  border: 1px solid #0082c9;
   box-shadow: none;
   -webkit-box-shadow: none;
 }
@@ -2017,12 +2026,12 @@ textarea#message{
 }
 
 .blog_category li a:hover{
-  background:#f26422;
+  background:#0082c9;
   color: #fff;
 }
 
  .badge:before {
-  border-color: transparent transparent transparent #f26422;
+  border-color: transparent transparent transparent #0082c9;
   border-style: solid;
   border-width: 10px;
   bottom: -8px;
@@ -2034,7 +2043,7 @@ textarea#message{
 }
 
 .badge {
-  background-color: #f26422;
+  background-color: #0082c9;
   border-radius: 5px;
   color: #fff;
   padding: 8px;
@@ -2161,7 +2170,7 @@ ul.faq li > div h3 {
 
 
 #publish_date {
-  background: #f26422;
+  background: #0082c9;
   border-bottom: 5px solid #4e4e4e;
   color: #fff;
   padding: 5px 0;
@@ -2187,8 +2196,8 @@ ul.pagination > li > a i{
 
 ul.pagination > li.active > a, 
 ul.pagination > li:hover > a {
-  background-color: #f26422 !important;
-  border-color: #f26422 !important;
+  background-color: #0082c9 !important;
+  border-color: #0082c9 !important;
   color: #fff;
 }
 
@@ -2229,7 +2238,7 @@ ul.sidebar-gallery {
 }
 
 .tag-cloud li a:hover{
-  background:#f26422;
+  background:#0082c9;
   color: #fff;  
 }
 
@@ -2368,7 +2377,7 @@ ul.sidebar-gallery {
 }
 
 .post_reply_comments h1 a:hover{
-  color:#f26422;
+  color:#0082c9;
 }
 
 .post_reply_comments h4{
@@ -2384,14 +2393,14 @@ ul.sidebar-gallery {
   bottom: 15px;
   position: absolute;
   right: 30px;
-  background: #f26422;
+  background: #0082c9;
   color: #fff;
   border-radius: 5px;
   padding: 8px 20px;
 }
 
 .post_reply_comments a:before {
-  border-color: #f26422 transparent transparent;
+  border-color: #0082c9 transparent transparent;
   border-style: solid;
   border-width: 16px;
   bottom: -11px;
@@ -2455,7 +2464,7 @@ shortcodes page css
 ************************/
 #bottom {
   background: #f5f5f5;
-  border-bottom: 5px solid #f26422;
+  border-bottom: 5px solid #0082c9;
   font-size: 14px;
 }
 
@@ -2483,7 +2492,7 @@ shortcodes page css
 }
 
 #bottom ul li a:hover {
-  color: #f26422;
+  color: #0082c9;
 }
 
 #bottom .widget {
@@ -2502,7 +2511,7 @@ shortcodes page css
 }
 
 #footer a:hover {
-  color: #f26422;
+  color: #0082c9;
 }
 
 #footer ul {
@@ -2548,7 +2557,7 @@ shortcodes page css
         top:0;
         left:-20px;
         content: "\f115"; 
-		color:#f26422;
+		color:#0082c9;
 }
 
 .obstaravanie li{
@@ -2561,7 +2570,7 @@ shortcodes page css
         top:0;
         left:-20px;
         content: "\f07a"; 
-		color:#f26422;
+		color:#0082c9;
 }
 .vyzvy li{
 	position:relative;
@@ -2573,7 +2582,7 @@ shortcodes page css
         top:0;
         left:-20px;
         content: "\f0a1"; 
-		color:#f26422;
+		color:#0082c9;
 }
 
 .aktuality li{
@@ -2586,7 +2595,7 @@ shortcodes page css
         top:0;
         left:-20px;
         content: "\f1ea"; 
-		color:#f26422;
+		color:#0082c9;
 }
 
 
