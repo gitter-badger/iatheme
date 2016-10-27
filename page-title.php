@@ -12,18 +12,28 @@
 <div class="container">
 	<?php get_sidebar(); ?>
 	<div class="col-sm-9 pull-right">
-<div class="clanok">
-<div class="row">
-<div class="col-sm-12 clanok-item">
-<?php //wdp_slider(1); ?>
-</div>
-</div>
-</div>
+        <div class="clanok">
+            <div class="row">
+                <div class="col-sm-12 clanok-item">
+                    <?php //wdp_slider(1); ?>
+                </div>
+            </div>
+        </div>
 		<?php // the_breadcrumbs(); ?>
-		<?php query_posts('cat=1');  // Uncategorized only show on TitlePage ?>
+		<?php //query_posts('cat=1');  // Uncategorized only show on TitlePage 
+ 			if( get_option('permalink_structure') ) {
+				 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			 } else {
+				$paged = (get_query_var('page')) ? get_query_var('page') : 1;
+			 }
+            		$args = array(
+                		'category__and' => array(15,15), 
+                		'paged' => $paged
+                		);
+            		query_posts($args); 
+        	?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<?php 
-			if (is_single()) :
+			<?php if (is_single()) :
 				the_title('<h2>', '</h2>' );
 			?>
 			<?php if( ! has_tag('no-date',$post)) { ?>
@@ -67,19 +77,21 @@
 				// Check if the perex field has a value.
 				if ( ! empty( $perex ) ) {
     					echo '<h3><p>'.$perex.'</p></h3>';
-				}
-					
-			endif; ?>
- 
+				} ?>
+
 				</div>
 				</div>
-				</div>	
-		<?php endwhile; else: ?>
-		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
-		<?php posts_nav_link(); ?>
+				</div>		
+			<?php endif; ?>
+		<?php endwhile; ?>
+            <?php wpex_pagination(); ?>
+        <?php else: ?>
+		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+        <?php endif; ?>
+		
 	</div>
 
 </div>
-<div id="delimiter">
+<div id="delimiter"></div>
 </section>
 <?php get_footer(); ?>

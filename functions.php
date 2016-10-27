@@ -173,13 +173,11 @@ add_action( 'widgets_init', 'iatheme_widgets_init' );
 
 // Remove WordPress Meta Generator
 remove_action('wp_head', 'wp_generator');
-
 // Hide WordPress Version Info
 function hide_wordpress_version() {
 	return '';
 }
 add_filter('the_generator', 'hide_wordpress_version');
-
 // Remove WordPress Version Number In URL Parameters From JS/CSS
 function hide_wordpress_version_in_script($src, $handle) {
     $src = remove_query_arg('ver', $src);
@@ -188,7 +186,49 @@ function hide_wordpress_version_in_script($src, $handle) {
 add_filter( 'style_loader_src', 'hide_wordpress_version_in_script', 10, 2 );
 add_filter( 'script_loader_src', 'hide_wordpress_version_in_script', 10, 2 );
 
+// Why is pagination refreshing the same page?
+//http://docs.wprssaggregator.com/why-is-pagination-refreshing-the-same-page/
 
+//add_filter( 'redirect_canonical','custom_disable_redirect_canonical' );
+//function custom_disable_redirect_canonical( $redirect_url ){
+//    if ( is_singular('post') ) $redirect_url = false;
+//    return $redirect_url;
+//}
+
+// Numbered Pagination
+//http://www.wpexplorer.com/pagination-wordpress-theme/
+if ( !function_exists( 'wpex_pagination' ) ) {
+	
+	function wpex_pagination() {
+		
+		$prev_arrow = is_rtl() ? '→' : '←';
+		$next_arrow = is_rtl() ? '←' : '→';
+		
+		global $wp_query;
+		$total = $wp_query->max_num_pages;
+		$big = 999999999; // need an unlikely integer
+		if( $total > 1 )  {
+			 if( !$current_page = get_query_var('paged') )
+				 $current_page = 1;
+			 if( get_option('permalink_structure') ) {
+				 $format = 'page/%#%/';
+			 } else {
+				 $format = '&paged=%#%';
+			 }
+			echo paginate_links(array(
+				'base'			=> str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+				'format'		=> $format,
+				'current'		=> max( 1, get_query_var('paged') ),
+				'total' 		=> $total,
+				'mid_size'		=> 3,
+				'type' 			=> 'list',
+				'prev_text'		=> $prev_arrow,
+				'next_text'		=> $next_arrow,
+			 ) );
+		}
+	}
+	
+}
 
 	/**
 	 * Class Name: twitter_bootstrap_nav_walker
